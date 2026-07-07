@@ -3,4 +3,4 @@
             [demo]))
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? demo))))
+    (is (some? (the-ns 'demo)))))
